@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
-<h1 style="color:rgb(241, 191, 26)" style="text-align:center">5892 Scouting</h1>
+<style>
+.center {
+ text-align: center
+}
+</style>
+<head>
+<h1 style="color:rgb(241, 191, 26)" class="center">5892 Scouting</h1>
+</head>
 <body style="background-color:black;">
 
 </html>
+class="center"
