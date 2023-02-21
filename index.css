@@ -1,0 +1,82 @@
+.button {
+  border: none;
+  color: gold;            /* text color */
+  padding: 15px 32px;     /* Size/dimensions of box */
+  text-align: center;     /* Align text at center of box */
+  text-decoration: none;  /* No font/style is being used */
+  display: inline-block;  
+  font-size: 20px;        /* Size of Font */
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: black;  /* Sets Backround Color of button box to black */
+  left: 367px;              /* Sets position of button */
+  top: 10x;                 /* Sets Position of button */
+  margin: 111px 0px;
+} /* Plus OR + */
+.button2 {
+  background-color: black;  /* Sets Backround Color of button box to black */
+  left: 290px;              /* Sets Position of button */
+  top: 10px;                /* Sets Position of button */
+  margin: 110px 0px;
+} /* Subtract OR - */
+.button3 {
+  background-color: black;  /* Sets Backround Color of button box to black */
+  left: 367px;              /* Sets Position of button */
+  top: 10px;                /* Sets Position of button */
+  margin: 184px 0px;
+} /* Subtract OR - */
+.button4 {
+  background-color: black;  /* Sets Backround Color of button box to black */
+  left: 290px;              /* Sets Position of button */
+  top: 10px;                /* Sets Position of button */
+  margin: 180px 0px;
+} /* Subtract OR - */
+
+
+
+
+#scoutingtitle, #paragraph1, #paragraph2, .button, #highgoaltrapezoid, #paragraph3, #lowgoaltrapezoid, #paragraph4 { 
+  position: fixed;        /*  */
+  top: 10px;              /*  */
+  padding: 10px;          /*  */
+}
+
+
+#scoutingtitle {
+  left: 230px;            /*  */
+  top: -20px;             /*  */
+  z-index: 2;             /*  */
+}
+
+#paragraph1 {
+  left: 300px;            /*  */
+  top: 80px;              /*  */
+  z-index: 3;             /*  */
+}
+#highgoaltrapezoid {
+  left: 309px;            /*  */
+  top: 116px;             /*  */
+}
+#paragraph2 {
+  left: 330px;            /*  */
+  top: 110px;             /*  */
+  z-index: 4;             /*  */
+}
+
+
+#paragraph3 {
+  left: 303px;            /*  */
+  top: 150px;             /*  */
+  z-index: 4;             /*  */
+}
+#lowgoaltrapezoid {
+  left: 310px;            /*  */
+  top: 185px;             /*  */
+}
+#paragraph4{
+  left: 331px;
+  top: 178px;
+}
+
