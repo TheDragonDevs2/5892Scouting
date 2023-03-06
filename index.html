@@ -7,42 +7,105 @@
   <script src="qrcode.js"></script>
 </head>
 
+
 <div class="bordered">
 
-</div>                                                                      
-
-
-<body style="background-color:black;">                                      
+</div>
+ <body style="background-color:black;">
 
   <div id="questions">
-     <br>
-    <input type="checkbox" id="tarmac" name="tarmac" value="tarmac">
-    <label for="AutoQ1" style="color:white"> Left Tarmac</label><br>
-    <input type="checkbox" id="highGoal" name="highGoal" value="highGoal">
-    <label for="AutoQ2" style="color:white"> Scored High Goal</label><br>
-    <input type="checkbox" id="lowGoal" name="lowGoal" value="lowGoal">
-    <label for="AutoQ3" style="color:white"> Scored Low Goal</label><br><br>
-    <label for="ChasisTypeQ" style="color:white">Chasis Type:</label>
-    <input type="text" id="chasis" name="chasis"><br><br>
+      <img src="5892scoutingtitle3.png" alt="5892 Scouting Title" id="scoutingTitle3">
+  <br>
+  <img src="5892scoutingtitle4.png" alt="Charged Up" id="scoutingTitle4">
+  <br>
+
+    <p style="color:white" id="teamnumbername">Team #</p>
+    <input type="number" id="teamnumber" name="teamnumber" min="1" max="9999">
+    <br><br>
+
+    <img src="autontitle.png" alt="Auton Title" id="autonTitle" style="width:250px;">
+
+    <label style="color:white"><input type="checkbox" style="color:blue" name="noauton" value="noauton"> No Auton</label>
+    <label style="color:white"><input type="checkbox" name="movedpestline" value="movedpastline"> Moved past line</label>
+    <label style="color:white"><input type="checkbox" name="scored" value="scored"> Scored</label>
+    <label style="color:white"><input type="checkbox" name="scoredmultiple" value="scoredmutiple"> Scored Multiple</label>
+    <label style="color:white"><input type="checkbox" name="chargestation" value="chargestation"> Charge Station</label>
+
+    <div class="row">
+      <p style="color:white;" id="paragraph1">FRC Cone</p>
+      <button class="counter" onclick="increment('high', '-');">-</button>
+      <div class="row">
+        <img src="frccone.png" alt="FRCcone" style="width:40px;height:50px;" id="frcconegamepiece">                     
+        <p style="color:white;" id="paragraph2">0</p>
+      </div>
+      <button class="counter" onclick="increment('high', '+');">+</button>
+    </div>
+
+    <div class="row">
+     <p style="color:white;" id="paragraph3">FRC Cube</p> 
+     <button class="counter" onclick="increment('low', '-');">-</button>
+      <div class="row">
+        <img src="frccube.png" alt="FRCcube" style="width:50px;height:50px;" id="frccubegamepiece">
+        <p style="color:white;" id="paragraph4">0</p>
+      </div>
+      <button class="counter" onclick="increment('low', '+');">+</button>
+    </div>
+
+    <label for="drivetrain">Drivetrain Type:</label>
+
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+
+    <img src="teleoptitle.png" alt="Teleop Title" id="teleoptitle">
+
+    <label style="color:white"><input type="checkbox" style="color:blue" name="didferry" value="didferry"> Did they Ferry?</label><br>
+
+    <select name="gameplay" id="gameplay">
+      <optgroup label="Gameplay">
+        <option value="DDAdefense">All defense</option>
+        <option value="DDMdefense">Most defence</option>
+        <option value="DDBdefense">Ballance of defense and offense</option>
+        <option value="DDMoffense">Most offense</option>
+        <option value="DDAoffense">All offense</option>
+    </select>
+
+    <select name="drivetrain" id="drivetrain">
+      <optgroup label="Drivetrain">
+        <option value="DDTank">Tank</option>
+        <option value="DDSwerve">Swerve</option>
+        <option value="DDOther">Other</option>
+    </select>
+
+    <label for="drivetrain">Drivetrain Type:</label>
+    
+
+    <p style="color:white">Did they go on the charge station?</label>
+    <label><input type="radio" name="RDChargeStation" value="rdbalancecharge"> Did they balance the charge station(CS lights showing up)?</label>
+    <label><input type="radio" name="RDChargeStation" value="rdno"> No</label>
+    <label><input type="radio" name="RDChargeStation" value="rdalone"> Alone</label>
+    <label><input type="radio" name="RDChargeStation" value="rdwithanotheramemb"> With another aliance member</label>
+    <label><input type="radio" name="RDChargeStation" value="rdwithfulla"> With a full alliance</label>
+    <br><br>
+
     <label for="ExtraNotesQ" style="color:white">Extra Notes:</label>
     <input type="text" id="notes" name="notes"><br><br>
 
-    <button type="submit" onclick="submit();" value="Submit">Submit</button>
-
-    <p style="color:white;" id="paragraph1">High Goal</p>            
-    <button class="button button1" onclick="increment('high', '+');">+</button>                           
-    <button class="button button2" onclick="increment('high', '-');">-</button>                           
-    <img src="https://th.bing.com/th/id/R.b8b1d24f3aa2207de22d25dd4e606587?rik=HxrOZz5L43COrQ&riu=http%3a%2f%2fwww.clipartbest.com%2fcliparts%2faTq%2fxMB%2faTqxMByEc.png&ehk=qGMu9%2fy3k7HoCfVNBSDKPSj8E3abRDQh1D9LS6TcJGs%3d&risl=&pid=ImgRaw&r=0" alt="HighGoalImage" style="width:50px;height:35px;" id="highgoaltrapezoid">
-    <p style="color:white;" id="paragraph2">0</p>
-
-    <p style="color:white;" id="paragraph3">Low Goal</p> 
-    <button class="button button3" onclick="increment('low', '+');">+</button>
-    <button class="button button4" onclick="increment('low', '-');">-</button>
-    <img src="trapezoid.png" alt="LowGoalImage" style="width:50px;height:35px;" id="lowgoaltrapezoid">
-    <p style="color:white;" id="paragraph4">0</p>
-  </div>
-
+  <button type="submit" onclick="submit();" value="Submit">Submit</button>
   <div id="qrcode"></div>
-
 </body>
 </html>
+
+
+<!-- 
+  1. Team Number 
+/* 2. Drivetrain= a. Tank, b. Swerve, c. Other */
+/* 3. Auton= a. No Auton, b. Moved past line, c. scored, d. Scored Multiple, Charge Station */
+/* 4. Gameplay= a. All defense, b. Most defence, c. Ballance of defense and offense, d. most offense, e. All offense */
+/* 5. How many cubes did they score: a. Bottom Row, b. Mid row, c. Top Row */
+/* 6. How many cones did they score: a. Bottom row, b. mid row, c. Top row */
+/* 7. Did they ferry?(bring game pieces to other teams)= y/n */
+/* 8. Did they go on the charge station?= a. Did they balance the charge station(CS lights showing up), b. No, c. Alone, d. With another aliance member, e. With a full alliance
+
+Computer Robot Font
+Squada One Font
+
+-->

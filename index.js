@@ -1,15 +1,15 @@
 function submit(){
     var tarmac = document.getElementById("tarmac");
-    var highGoal = document.getElementById("highGoal");
     var lowGoal = document.getElementById("lowGoal");
+    var highGoal = document.getElementById("highGoal");
     var chasis = document.getElementById("chasis");
     var notes = document.getElementById("notes");
     var highScore = document.getElementById("paragraph2");
     var lowScore = document.getElementById("paragraph4");
     let jzon = {
         'leftTarmac': `${tarmac.checked}`,
-        'highGoal': `${highGoal.checked}`,
         'lowGoal': `${lowGoal.checked}`,
+        'highGoal': `${highGoal.checked}`,
         'chasis': `${chasis.value}`,
         'notes': `${notes.value}`,
         'highScore': `${highScore.innerHTML}`,
@@ -17,7 +17,7 @@ function submit(){
     };
     final = btoa(JSON.stringify(jzon))
     console.log(final)
-    document.getElementById('questions').remove();
+    document.getElementById('questions').style.display = 'none';
     g = document.createElement('div');
     g.setAttribute("id", "qrcode");
     var qrcode = new QRCode("qrcode", {

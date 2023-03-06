@@ -12,71 +12,127 @@
 .button1 {
   background-color: black;  /* Sets Backround Color of button box to black */
   left: 367px;              /* Sets position of button */
-  top: 10x;                 /* Sets Position of button */
-  margin: 111px 0px;
+  top: 10px;                 /* Sets Position of button */
+  margin: 370px 0px;
 } /* Plus OR + */
 .button2 {
   background-color: black;  /* Sets Backround Color of button box to black */
   left: 290px;              /* Sets Position of button */
   top: 10px;                /* Sets Position of button */
-  margin: 110px 0px;
+  margin: 370px 0px;
 } /* Subtract OR - */
 .button3 {
   background-color: black;  /* Sets Backround Color of button box to black */
   left: 367px;              /* Sets Position of button */
   top: 10px;                /* Sets Position of button */
-  margin: 184px 0px;
+  margin: 450px 0px;
 } /* Subtract OR - */
 .button4 {
   background-color: black;  /* Sets Backround Color of button box to black */
   left: 290px;              /* Sets Position of button */
   top: 10px;                /* Sets Position of button */
-  margin: 180px 0px;
+  margin: 450px 0px;
 } /* Subtract OR - */
 
 
 
 
-#scoutingtitle, #paragraph1, #paragraph2, .button, #highgoaltrapezoid, #paragraph3, #lowgoaltrapezoid, #paragraph4 { 
-  position: fixed;        /*  */
+#scoutingtitle, #autontitle, #paragraph1, #paragraph2, #questions, .button, #frcconegamepiece, #paragraph3, #frccubegamepiece, #paragraph4, #scoutingTitle4, #scoutingTitle3, #autonTitle, #drivetrain, #gameplay, #teamnumber, #teamnumbername, #teleoptitle { 
+  /* position: fixed;         */
   top: 10px;              /*  */
   padding: 10px;          /*  */
 }
 
-
 #scoutingtitle {
-  left: 230px;            /*  */
-  top: -20px;             /*  */
-  z-index: 2;             /*  */
+  text-align: center;
 }
+
+#teamnumber {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#autontitle {}
+
+#frcconegamepiece {}
 
 #paragraph1 {
-  left: 300px;            /*  */
-  top: 80px;              /*  */
-  z-index: 3;             /*  */
-}
-#highgoaltrapezoid {
-  left: 309px;            /*  */
-  top: 116px;             /*  */
-}
-#paragraph2 {
-  left: 330px;            /*  */
-  top: 110px;             /*  */
-  z-index: 4;             /*  */
+  text-align: center;
 }
 
+#paragraph2 {
+  text-align: center
+}
 
 #paragraph3 {
-  left: 303px;            /*  */
-  top: 150px;             /*  */
-  z-index: 4;             /*  */
-}
-#lowgoaltrapezoid {
-  left: 310px;            /*  */
-  top: 185px;             /*  */
-}
-#paragraph4{
-  left: 331px;
-  top: 178px;
+  text-align: center;
 }
 
+#frccubegamepiece {}
+
+#paragraph4{
+  text-align: center;
+}
+
+#scoutingTitle3 {
+  margin: 0 auto;
+  display: block;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+#scoutingTitle4 {
+  width: 235px;
+}
+
+#autonTitle {
+  width: 230px;
+}
+
+#drivetrain {
+  width: 110px;
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#gameplay {
+  width: 110px;
+  height: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#teamnumbername {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#teleoptitle {}
+
+#submit {
+  align-content: center;
+}
+
+
+
+
+
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  width: 100%;
+}
+
+.counter {
+  width: 75px;
+  height: 75px;
+}
+
+.row .row {
+  width: auto;
+}
+
+label {
+  display: block;
+}
