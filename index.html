@@ -1,95 +1,148 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Scouting Form</title>
-  <link rel="stylesheet" href="index.css">
-  <script src="index.js"></script>
-  <script src="qrcode.js"></script>
-</head>
+  <head>
+    <title>Scouting Form</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <script src="qrcode.js"></script>
+  </head>
 
 
-<div class="bordered">
-
-</div>
- <body style="background-color:black;">
+<body style="background-color:black;">
 
   <div id="questions">
+    <div class="main" id="section1">
+      <br>
       <img src="5892scoutingtitle3.png" alt="5892 Scouting Title" id="scoutingTitle3">
-  <br>
-  <img src="5892scoutingtitle4.png" alt="Charged Up" id="scoutingTitle4">
-  <br>
+      <br>
+      <img src="5892scoutingtitle4.png" alt="Charged Up" id="scoutingTitle4">
+      <br>
 
-    <p style="color:white" id="teamnumbername">Team #</p>
-    <input type="number" id="teamnumber" name="teamnumber" min="1" max="9999">
-    <br><br>
+      <p style="color:white" id="teamnumbername">Team #</p>
+      <input type="number" id="teamnumber" name="teamnumber" min="1" max="9999">
+    </div>
+    <br>
 
-    <img src="autontitle.png" alt="Auton Title" id="autonTitle" style="width:250px;">
 
-    <label style="color:white"><input type="checkbox" style="color:blue" name="noauton" value="noauton"> No Auton</label>
-    <label style="color:white"><input type="checkbox" name="movedpestline" value="movedpastline"> Moved past line</label>
-    <label style="color:white"><input type="checkbox" name="scored" value="scored"> Scored</label>
-    <label style="color:white"><input type="checkbox" name="scoredmultiple" value="scoredmutiple"> Scored Multiple</label>
-    <label style="color:white"><input type="checkbox" name="chargestation" value="chargestation"> Charge Station</label>
+    <div class="main" id="section2">
+      <br>
+      <img src="autontitle.png" alt="Auton Title" id="autonTitle">
 
-    <div class="row">
-      <p style="color:white;" id="paragraph1">FRC Cone</p>
-      <button class="counter" onclick="increment('high', '-');">-</button>
-      <div class="row">
-        <img src="frccone.png" alt="FRCcone" style="width:40px;height:50px;" id="frcconegamepiece">                     
-        <p style="color:white;" id="paragraph2">0</p>
+      <div class="autonquestions">
+      <label style="color:white"><input type="checkbox" style="color:blue" name="noauton" value="noauton" id="noauton"> No Auton</label>
+      <label style="color:white"><input type="checkbox" name="movedpestline" value="movedpastline" id="movedpestline"> Moved past line</label>
+      <label style="color:white"><input type="checkbox" name="scored" value="scored"id="scored"> Scored</label>
+      <label style="color:white"><input type="checkbox" name="scoredmultiple" value="scoredmutiple" id="scoredmultiple"> Scored Multiple</label>
+      <label style="color:white"><input type="checkbox" name="chargestation" value="chargestation" id="chargestation"> Charge Station</label>
       </div>
-      <button class="counter" onclick="increment('high', '+');">+</button>
+
+
+      <pre style="color:white;" class="center" id="paragraph9">Cones                           Cubes</pre> 
+          <div class="row" style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph11">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+          <div class="row" style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph13">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+          <div class="row"style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph13">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+    </div>
+    <br>
+
+
+    <div class="main" id="section3">
+      <br>
+      <img src="teleoptitle.png" alt="Teleop Title" id="teleoptitle">
+
+      <pre style="color:white;" class="center" id="paragraph9">Cones                           Cubes</pre>
+          <div class="row" style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph11">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+          <div class="row" style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph13">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+          <div class="row" style="height:60px;">
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececone.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph13">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+            <p>------</p>
+            <button class="counter" onclick="increment('low', '-');">-</button>
+            <img src="gamepiececube.png" style="width:50px;height:50px;">
+            <p style="color:white;" class="paragraphs" id="paragraph14">0</p>
+            <button class="counter" onclick="increment('low', '+');">+</button>
+          </div>
+
+      <label id="didferry" style="color:white"><input type="checkbox" style="color:blue" name="didferry" value="didferry"> Did they Ferry?</label>
+      <br><br>
+
+      <select name="gameplay" id="gameplay">
+        <optgroup label="Gameplay">
+          <option value="DDAdefense">All defense</option>
+          <option value="DDMdefense">Most defence</option>
+          <option value="DDBdefense">Ballance of defense and offense</option>
+          <option value="DDMoffense">Most offense</option>
+          <option value="DDAoffense">All offense</option>
+      </select>
+      <br><br>
+
+      <pre for="ExtraNotesQ" style="color:white" id="extranoteslabel">Extra Notes:</pre>
+      <input type="text" id="notes" name="notes">
+
+      <br><br><br><br>
+      <div class="chargestation">
+        <p style="color:white"> <br>(CS lights showing up) Charge Station </label>
+        <div style="color:white">
+          <label><input type="radio" name="RDChargeStation" value="rdwithfulla"> With a full alliance</label>
+          <label><input type="radio" name="RDChargeStation" value="rdwithanotheramemb"> With another aliance member</label>
+          <label><input type="radio" name="RDChargeStation" value="rdalone"> Alone</label>
+          <label><input type="radio" name="RDChargeStation" value="rdno"> Did Not Balance</label>
+        </div>
+      </div>
     </div>
 
-    <div class="row">
-     <p style="color:white;" id="paragraph3">FRC Cube</p> 
-     <button class="counter" onclick="increment('low', '-');">-</button>
-      <div class="row">
-        <img src="frccube.png" alt="FRCcube" style="width:50px;height:50px;" id="frccubegamepiece">
-        <p style="color:white;" id="paragraph4">0</p>
-      </div>
-      <button class="counter" onclick="increment('low', '+');">+</button>
-    </div>
-
-    <label for="drivetrain">Drivetrain Type:</label>
-
-    <input type="number" id="quantity" name="quantity" min="1" max="5">
-
-    <img src="teleoptitle.png" alt="Teleop Title" id="teleoptitle">
-
-    <label style="color:white"><input type="checkbox" style="color:blue" name="didferry" value="didferry"> Did they Ferry?</label><br>
-
-    <select name="gameplay" id="gameplay">
-      <optgroup label="Gameplay">
-        <option value="DDAdefense">All defense</option>
-        <option value="DDMdefense">Most defence</option>
-        <option value="DDBdefense">Ballance of defense and offense</option>
-        <option value="DDMoffense">Most offense</option>
-        <option value="DDAoffense">All offense</option>
-    </select>
-
-    <select name="drivetrain" id="drivetrain">
-      <optgroup label="Drivetrain">
-        <option value="DDTank">Tank</option>
-        <option value="DDSwerve">Swerve</option>
-        <option value="DDOther">Other</option>
-    </select>
-
-    <label for="drivetrain">Drivetrain Type:</label>
-    
-
-    <p style="color:white">Did they go on the charge station?</label>
-    <label><input type="radio" name="RDChargeStation" value="rdbalancecharge"> Did they balance the charge station(CS lights showing up)?</label>
-    <label><input type="radio" name="RDChargeStation" value="rdno"> No</label>
-    <label><input type="radio" name="RDChargeStation" value="rdalone"> Alone</label>
-    <label><input type="radio" name="RDChargeStation" value="rdwithanotheramemb"> With another aliance member</label>
-    <label><input type="radio" name="RDChargeStation" value="rdwithfulla"> With a full alliance</label>
-    <br><br>
-
-    <label for="ExtraNotesQ" style="color:white">Extra Notes:</label>
-    <input type="text" id="notes" name="notes"><br><br>
-
-  <button type="submit" onclick="submit();" value="Submit">Submit</button>
+  <button type="submit" onclick="submit();" value="Submit" id="submit">Submit</button>
   <div id="qrcode"></div>
 </body>
 </html>

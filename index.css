@@ -1,46 +1,7 @@
-.button {
-  border: none;
-  color: gold;            /* text color */
-  padding: 15px 32px;     /* Size/dimensions of box */
-  text-align: center;     /* Align text at center of box */
-  text-decoration: none;  /* No font/style is being used */
-  display: inline-block;  
-  font-size: 20px;        /* Size of Font */
-  cursor: pointer;
-}
-
-.button1 {
-  background-color: black;  /* Sets Backround Color of button box to black */
-  left: 367px;              /* Sets position of button */
-  top: 10px;                 /* Sets Position of button */
-  margin: 370px 0px;
-} /* Plus OR + */
-.button2 {
-  background-color: black;  /* Sets Backround Color of button box to black */
-  left: 290px;              /* Sets Position of button */
-  top: 10px;                /* Sets Position of button */
-  margin: 370px 0px;
-} /* Subtract OR - */
-.button3 {
-  background-color: black;  /* Sets Backround Color of button box to black */
-  left: 367px;              /* Sets Position of button */
-  top: 10px;                /* Sets Position of button */
-  margin: 450px 0px;
-} /* Subtract OR - */
-.button4 {
-  background-color: black;  /* Sets Backround Color of button box to black */
-  left: 290px;              /* Sets Position of button */
-  top: 10px;                /* Sets Position of button */
-  margin: 450px 0px;
-} /* Subtract OR - */
-
-
-
-
-#scoutingtitle, #autontitle, #paragraph1, #paragraph2, #questions, .button, #frcconegamepiece, #paragraph3, #frccubegamepiece, #paragraph4, #scoutingTitle4, #scoutingTitle3, #autonTitle, #drivetrain, #gameplay, #teamnumber, #teamnumbername, #teleoptitle { 
+#scoutingtitle, #autontitle, #paragraph1, #paragraph2, #questions, .button, #scoutingTitle4, #scoutingTitle3, #autonTitle, #gameplay, #teamnumber, #teamnumbername, #teleoptitle, #paragraph9, #submit { 
   /* position: fixed;         */
   top: 10px;              /*  */
-  padding: 10px;          /*  */
+  padding: 0px;          /*  */
 }
 
 #scoutingtitle {
@@ -48,71 +9,125 @@
 }
 
 #teamnumber {
+  margin: 0 auto;
+  display: inline-block;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-#autontitle {}
-
-#frcconegamepiece {}
-
-#paragraph1 {
-  text-align: center;
+  font-size: 30px;
+  height: 55px;
+  width: 90px;
+  border-radius: 12px;
 }
 
 #paragraph2 {
-  text-align: center
+  font-size: 2em;
 }
 
-#paragraph3 {
-  text-align: center;
-}
-
-#frccubegamepiece {}
-
-#paragraph4{
-  text-align: center;
+#paragraph9 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 #scoutingTitle3 {
   margin: 0 auto;
   display: block;
 }
+
 img {
   display: block;
-  margin: 0 auto;
 }
+
 #scoutingTitle4 {
   width: 235px;
+  margin: 0 auto;
+  display: block;
 }
 
 #autonTitle {
   width: 230px;
+  margin: 0 auto;
+  display: block;
 }
 
-#drivetrain {
-  width: 110px;
-  height: 35px;
-  font-family: Arial, Helvetica, sans-serif;
+.autonquestions {
+  margin-left: 8px;
+  font-size: 18px;
 }
 
 #gameplay {
   width: 110px;
   height: 35px;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 20px;
+  margin-left: 8px;
 }
 
 #teamnumbername {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
 }
 
-#teleoptitle {}
+#teleoptitle {
+  margin: 0 auto;
+  display: block;
+}
+
+#didferry {
+  margin-top: -200px;
+  margin-left: 8px;
+  font-size: 18px;
+}
+
+#extranoteslabel {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-bottom: -2px;
+}
+
+#notes {
+  margin-left: 8px;
+}
+
+.chargestation {
+  display: flex;
+  flex-direction: row;
+  margin-left: 130px;
+}
 
 #submit {
-  align-content: center;
+  align-items: right;
+  height: 40px;
+  width: 100px;
+  border-radius: 12px;
 }
 
+#section1 {
+  height: 450px;
+  width: 800px;
+  background-color: black;
+  border-style: solid;
+  border-color: orange;
+  border-width: 9px;
+  text-align: center;
+}
 
+#section2 {
+  height: 450px;
+  width: 800px;
+  background-color: black;
+  border-style: solid;
+  border-color: lightblue;
+  border-width: 9px;
+}
+
+#section3 {
+  height: 450px;
+  width: 800px;
+  background-color: black;
+  border-style: solid;
+  border-color: rgb(141, 255, 141);
+  border-width: 9px;
+}
 
 
 
@@ -121,18 +136,48 @@ img {
   display: flex;
   flex-direction: row;
   align-content: space-between;
-  width: 100%;
+  justify-content: center;
 }
+<!-- /* justify-content: left */ -->
 
 .counter {
-  width: 75px;
-  height: 75px;
-}
-
-.row .row {
-  width: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: 20px;
+  border-width: 5px;
+  border-color: azure;
+  text-decoration-thickness: 5%;
+  font-weight: bold;
+  font-size: 2em;
 }
 
 label {
   display: block;
 }
+
+.row-inner {
+  display: flex;
+  flex-direction: row;
+  row-gap: 20px;
+}
+
+.paragraphs {
+  font-size: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+
+      <p style="color:white;">Cones</p>
+      <div class="row">
+        <div class="row-inner">
+          <button class="counter" onclick="increment('high', '-');">-</button>
+          <div class="row">
+            <img src="gamepiececone.png" style="width:40px;height:50px;">                     
+            <p style="color:white;" id="paragraph6">0</p>
+          </div>
+          <button class="counter" onclick="increment('high', '+');">+</button>
+        </div>
+      </div>
